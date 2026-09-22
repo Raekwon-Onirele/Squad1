@@ -37,6 +37,8 @@ body {
   cursor: pointer;
 }
 
+
+
 .mod-whatsapp-cabecalho {
   min-height: 56px;
   padding: 0 max(36px, calc((100% - 1080px) / 2));
@@ -336,11 +338,17 @@ body {
   padding: 36px 0 18px;
 }
 .mod-whatsapp-hero h1 {
-  margin: 0 0 12px;
+  margin: 0 0 40px;
   color: var(--mod-whatsapp-azul);
-  font-size: clamp(30px, 3.5vw, 42px);
+  font-size: clamp(50px, 3.5vw, 42px);
   line-height: 1.12;
+  text-align: center;
 }
+
+.mod-whatsapp-hero p {
+  text-align: justify;
+}
+
 .mod-whatsapp-hero p,
 .mod-whatsapp-lead {
   margin: 0;
@@ -355,8 +363,8 @@ body {
   background: #e47d00;
 }
 .mod-whatsapp-titulo-secao {
-  margin: 0 0 11px;
-  font-size: 11px;
+  margin: 40px 0px 20px 0px;
+  font-size: 28px;
   line-height: 1.2;
 }
 .mod-whatsapp-titulo-laranja {
@@ -364,6 +372,8 @@ body {
 }
 .mod-whatsapp-titulo-azul {
   color: var(--mod-whatsapp-azul);
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 .mod-whatsapp-bloco {
   margin-bottom: 24px;
@@ -437,6 +447,14 @@ body {
   background: #13883f;
   border-radius: 8px;
 }
+
+.mod-whatsapp-bloco::after {
+  content: "";
+  display: block;
+  height: 2px;
+  margin-top: 18px;
+  background: #e47d00;
+}
 .mod-whatsapp-dica h2 {
   margin: 0 0 7px;
   font-size: 11px;
@@ -469,13 +487,14 @@ body {
 .mod-whatsapp-icone-chave {
   width: 33px;
   height: 33px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #075182;
   background: #f2f0e9;
   border: 1px solid #c9c1b0;
   border-radius: 50%;
-  font-size: 25px;
+  font-size: 20px;
 }
 .mod-whatsapp-compartilhar {
   min-height: 42px;

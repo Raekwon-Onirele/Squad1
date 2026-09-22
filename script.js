@@ -1,3 +1,13 @@
+document.getElementById('btn-compartilhar-familia').addEventListener('click', function() {
+
+  const mensagem = "Olá! Achei este site muito importante sobre como evitar golpes no Whatsapp. Acesse: www.google.com";
+
+  const linkWhatsapp = "https://api.whatsapp.com/send?text=" + encodeURIComponent(mensagem);
+
+  window.open(linkWhatsapp, '_blank');
+
+});
+
 (function () {
   "use strict";
 
