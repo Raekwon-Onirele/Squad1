@@ -567,8 +567,9 @@ body {
   }
   .mod-whatsapp-imagens img {
     height: 88px;
-    object-fit: contain;
+    object-fit: cover;
   }
+  
   .mod-whatsapp-alertas {
     gap: 10px;
     display: flex;
